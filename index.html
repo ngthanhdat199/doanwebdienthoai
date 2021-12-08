@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar"> 
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--seperate">Trang chủ</li>
+                        <li class="header__navbar-item header__navbar-item--seperate">Tin tức</li>
+                        <li class="header__navbar-item">Liên hệ</li>
+                    </ul>
+    
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-notify">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <div class="header__notify-header">
+                                    <div class="header__notify-wrap">
+                                        <img class="header__img" src="./assets/img/notify.png">
+                                    </div>
+                                    <p class="header__notify-news">Chưa có thông báo mới</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-question-circle"></i>
+                                Hỗ Trợ
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--seperate">Đăng kí</li>
+                        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
+                    </ul>
+                </nav>
+                <!-- Header with search -->
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <a href="./index.html" class="header__logo-link">
+                            <img class="header__logo-img" src="https://cf.shopee.vn/file/d734f6291f072bb855371432da462d65" alt="">
+                        </a>
+                    </div>
+
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Nhập tên điện thoại ... cần tìm">
+
+                            <!-- Search history -->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Xu hướng tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">iphone</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">iphone 11</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">iphone 12</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">iphone 13</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">ipad</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+                    </div>
+    
+                    <!-- Cart layout -->
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            <span class="header__cart-notice">3</span>
+
+                            
+                            <div class="header__cart-list ">
+                                <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                <ul class="header__cart-list-item">
+                                    <!-- Cart item -->
+                                    <li class="header__cart-item">  
+                                        <img src="https://cf.shopee.vn/file/21a6f19db2e8932b5c971c562c5ea35d_tn" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">ÁO KHOÁC KAKI GRAYBOX NO...</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">đ238.000</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">Phân loại hàng: Bạc</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">  
+                                        <img src="https://cf.shopee.vn/file/aa27abef2b58980676560b108f5e6d13_tn" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Sổ Tay Từ Vựng 120 Trang (7.6 x 1...</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">đ12.000</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">Phân loại hàng: Bạc</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">  
+                                        <img src="https://cf.shopee.vn/file/905d518768e16e6f6cf5c1ad28c8a595_tn" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Sổ tay ghi chép A5 gáy xoắn 60 tra...</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">đ21.000</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">Phân loại hàng: Bạc</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <button class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </header>
+
+        <div class="app__container">
+           <div class="grid">
+            <div class="grid__row app__content">
+                <div class="grid__column-3">
+                 <nav class="category">
+                     <h3 class="category__heading">
+                         <i class="category__heading-icon fas fa-list"></i>
+                         Danh Mục
+                     </h3>
+                    <ul class="category-list">
+                         <li class="category-item category-item--active">
+                             <a href="" class="category-item__link">Hãng sản xuất</a>
+                         </li>
+                         <li class="category-item">
+                             <a href="" class="category-item__link">Apple (iphone)</a>
+                         </li>
+                         <li class="category-item">
+                             <a href="" class="category-item__link">Samsung</a>
+                         </li>
+                         <li class="category-item">
+                            <a href="" class="category-item__link">Xiaomi</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="category-item__link">Vsmart</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="category-item__link">OPPO</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="category-item__link">Tecno</a>
+                        </li>
+                    </ul>
+                    <ul class="category-list">
+                        <li class="category-item category-item--active">
+                            <a href="" class="category-item__link">Mức giá</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="category-item__link">Dưới 2 triệu</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="category-item__link">Từ 2 - 4 triệu</a>
+                        </li>
+                        <li class="category-item">
+                           <a href="" class="category-item__link">Từ 4 - 7 triệu</a>
+                       </li>
+                       <li class="category-item">
+                           <a href="" class="category-item__link">Từ 7 - 13 triệu</a>
+                       </li>
+                       <li class="category-item">
+                           <a href="" class="category-item__link">Trên 13 triệu</a>
+                       </li>
+                   </ul>
+                    <ul class="category-list">
+                        <li class="category-item category-item--active">
+                            <a href="" class="category-item__link">Tính năng đặc biệt</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="category-item__link">Bảo mật vân tay</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="category-item__link">Nhận diện khuôn mặt</a>
+                        </li>
+                        <li class="category-item">
+                        <a href="" class="category-item__link">Chống nước và bụi</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="category-item__link">Sạc nhanh</a>
+                        </li>
+                    </ul>
+                    <ul class="category-list">
+                        <li class="category-item category-item--active">
+                            <a href="" class="category-item__link">Dung lượng PIN</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="category-item__link">Dưới 3000 mah</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="category-item__link">Từ 3000 - 4000 mah</a>
+                        </li>
+                        <li class="category-item">
+                        <a href="" class="category-item__link">Siêu trâu: trên 4000 mah</a>
+                        </li>
+                    </ul>
+                    <ul class="category-list">
+                        <li class="category-item category-item--active">
+                            <a href="" class="category-item__link">Màn hình</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="category-item__link">Màn hình nhỏ: dưới 5.0 inch</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="category-item__link">Nhỏ gọn vừa tay: dưới 6.0 inch, tràn viền</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="category-item__link">Trên 6.0 inch</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="category-item__link">Màn hình gập</a>
+                        </li>
+                    </ul>
+                    <ul class="category-list">
+                        <li class="category-item category-item--active">
+                            <a href="" class="category-item__link">Camera</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="category-item__link">Quay phim slow motion</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="category-item__link">Ai camera</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="category-item__link">Chụp 3d</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="category-item__link">Hiệu ứng làm đẹp</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="category-item__link">Zoom quang học</a>
+                        </li>
+                    </ul>
+                    <ul class="category-list">
+                        <li class="category-item category-item--active">
+                            <a href="" class="category-item__link">Trả góp ưu đãi</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="category-item__link">Trả góp 0%</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="category-item__link">Trả góp 0đ</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="" class="category-item__link">Trả góp 0%/0đ</a>
+                        </li>
+                    </ul>
+                 </nav>
+                </div>
+                <div class="grid__column-9">
+                    <div class="home-filter">
+                        <span class="home-filter__label">Ưu tiên xem:</span>
+                        <ul class="home-filter__wrap">
+                            <li class="home-filter__item">
+                                <button class="home-filter__btn btn btn--primary">Bán chạy nhất</button>
+                            </li>
+                            <li class="home-filter__item">
+                                <button class="home-filter__btn home-filter__btn-active btn">Trả góp 0%</button>
+                            </li>
+                            <li class="home-filter__item">
+                                <button class="home-filter__btn home-filter__btn-active btn">Giá thấp</button>
+                            </li>
+                            <li class="home-filter__item">
+                                <button class="home-filter__btn home-filter__btn-active btn">Giá cao</button>
+                            </li>
+                            <li class="home-filter__item">
+                                <button class="home-filter__btn home-filter__btn-active btn">Ưu đãi online</button>
+                            </li>
+
+                        </ul>
+
+                        <div class="home-filter__page">
+                            <span class="home-filter__page-num">
+                                <span class="home-filter__page-current">1</span>/14
+                            </span>
+                            <div class="home-filter__page-control">
+                                <a href="" class="home-filter__page-btn home-filter__page-btn--disabled">
+                                    <i class="home-filter__page-icon fas fa-angle-left"></i>
+                                </a>
+                                <a href="" class="home-filter__page-btn">
+                                    <i class="home-filter__page-icon fas fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-product">
+                        <div class="grid__row">
+                            <div class="grid__column-3-3">
+                                <!-- Product item -->
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img">
+                                        <img src="./assets/img/iphone.jpg" alt="iPhone 13 Pro Max 128GB">
+                                        <div class="home-product-item__sale">
+                                            <span class="home-product-item__sale-price">Trả góp 0%</span>
+                                        </div>
+                                    </div>  
+                                    <div class="home-product-item__description">
+                                        <h3 class="home-product-item__name">
+                                            <a href="" class="home-product-item__link" title="iPhone 13 Pro Max 128GB" >iPhone 13 Pro Max 128GB</a>
+                                        </h3>
+
+                                        <div class="home-product-item__memory">
+                                            <div class="home-product-item1 home-product-item1__active">
+                                                <strong >128GB</strong>
+                                            </div>
+                                            <div class="home-product-item1">
+                                                <strong>256GB</strong>
+                                            </div>
+                                            <div class="home-product-item1">
+                                                <strong>512GB</strong>
+                                            </div>
+                                            <div class="home-product-item1">
+                                                <strong>1TB</strong>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product-item__price">
+                                            <div class="home-product-item__price-left">
+                                                <div class="home-product-item__left-price">
+                                                    33.990.000
+                                                     ₫
+                                                </div>
+                                            </div>
+                                            <div class="home-product-item__price-right">
+                                                <span class="home-product-item__price-right-text">Chỉ từ</span>
+                                                <p class="home-product-item__right-price">
+                                                    <strong>3.000.500đ</strong>
+                                                /tháng
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product-item__info">
+                                            <div class="home-product-item__info__text">
+                                                <span class="home-product-item__data">
+                                                    <i class="home-product-item__icon fas fa-server"></i> A15 Bionic
+                                                </span>
+                                                <span class="home-product-item__data">
+                                                    <i class="home-product-item__icon fas fa-mobile-alt"></i> 6.7"
+                                                </span>
+                                                <span class="home-product-item__data">
+                                                    <i class="home-product-item__icon fas fa-microchip"></i> 6 GB
+                                                </span>
+                                                <span class="home-product-item__data">
+                                                    <i class="home-product-item__icon far fa-hdd"></i> 128 GB
+                                                </span>
+                                            </div>
+
+                                            <div class="home-product-item__pay">
+                                                <span class="home-product-item__pay-icon home-product-item__pay-active">
+                                                    <img src="./assets/img/moca.jpg" alt="Giảm thêm 5% tối đa 500.000đ">
+                                                </span>
+                                                <span class="home-product-item__pay-icon">
+                                                    <img src="./assets/img/vnpay.jpg" alt="Giảm thêm 500.000đ khi thanh toán qua VNPAY">
+                                                </span>
+                                                <span class="home-product-item__pay-icon">
+                                                    <img src="./assets/img/fecredit.jpg" alt="Giảm thêm 500.000đ qua thẻ tín dụng FE">
+                                                </span>
+                                                <div class="home-product-item__pay-info">Giảm thêm 5% tối đa 500.000đ</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product__btn">
+                                            <a href="" class="btn btn--primary btn-medium">MUA NGAY</a>
+                                            <a href="" class="btn btn-small">SO SÁNH</a>
+                                        </div>
+
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="grid__column-3-3">
+                                <!-- Product item -->
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img">
+                                        <img src="./assets/img/samsung.jpg" alt="Samsung Galaxy Z Flip3 5G 128GB">
+                                        <div class="home-product-item__sale home-product-item__sale-two">
+                                            <span class="home-product-item__sale-price ">Trả góp 0%</span>
+                                        </div>
+                                        <div class="home-product-item__reduce">
+                                            <span class="home-product-item__reduce-price ">Giảm 1.000.000₫</span>
+                                        </div>
+                                    </div>  
+                                    <div class="home-product-item__description">
+                                        <h3 class="home-product-item__name">
+                                            <a href="" class="home-product-item__link" title="Samsung Galaxy Z Flip3 5G 128GB" >Samsung Galaxy Z Flip3 5G 128GB</a>
+                                        </h3>
+
+                                        <div class="home-product-item__memory">
+                                            <div class="home-product-item1 home-product-item1__active">
+                                                <strong>128GB</strong>
+                                            </div>
+                                            <div class="home-product-item1">
+                                                <strong>256GB</strong>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product-item__price home-product-item__price-bottom">
+                                            <div class="home-product-item__price-left">
+                                                <div class="home-product-item__left-price home-product-item__price-box">
+                                                    23.990.000 
+                                                     ₫
+                                                </div>
+                                            </div>
+                                            <div class="home-product-item__price-right">
+                                                <span class="home-product-item__price-right-text home-product-item__price-strike"><s>24.990.000 ₫</s> </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product-item__info">
+                                            <div class="home-product-item__info__text">
+                                                <span class="home-product-item__data">
+                                                    <i class="home-product-item__icon fas fa-server"></i> Snapdragon 888
+                                                </span>
+                                                <span class="home-product-item__data">
+                                                    <i class="home-product-item__icon fas fa-mobile-alt"></i> Màn hình chính: 6.7”, Màn hình phụ: 1.9”
+                                                </span>
+                                                <span class="home-product-item__data">
+                                                    <i class="home-product-item__icon fas fa-microchip"></i> 8 GB
+                                                </span>
+                                                <span class="home-product-item__data">
+                                                    <i class="home-product-item__icon far fa-hdd"></i> 128 GB
+                                                </span>
+                                            </div>
+
+                                            <div class="home-product-item__pay">
+                                                <span class="home-product-item__pay-icon home-product-item__pay-active">
+                                                    <img src="./assets/img/moca.jpg" alt="Giảm thêm 5% tối đa 500.000đ">
+                                                </span>
+                                                <span class="home-product-item__pay-icon">
+                                                    <img src="./assets/img/samsungpay.jpg" alt="Giảm 30% Samsung Care+">
+                                                </span>
+                                                <span class="home-product-item__pay-icon">
+                                                    <img src="./assets/img/fecredit.jpg" alt="Giảm thêm 500.000đ qua thẻ tín dụng FE">
+                                                </span>
+                                                <div class="home-product-item__pay-info">Giảm 30% Samsung Care+</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product__btn">
+                                            <a href="" class="btn btn--primary btn-medium">MUA NGAY</a>
+                                            <a href="" class="btn btn-small">SO SÁNH</a>
+                                        </div>
+
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="grid__column-3-3">
+                                <!-- Product item -->
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img">
+                                        <img src="./assets/img/xiaomi.jpg" alt="Xiaomi POCO X3 Pro NFC 8GB-256GB">
+                                        <div class="home-product-item__reduce">
+                                            <span class="home-product-item__reduce-price ">Giảm 300.000₫</span>
+                                        </div>
+                                    </div>  
+                                    <div class="home-product-item__description">
+                                        <h3 class="home-product-item__name">
+                                            <a href="" class="home-product-item__link" title="Xiaomi POCO X3 Pro NFC 8GB-256GB" >Xiaomi POCO X3 Pro NFC 8GB-256GB</a>
+                                        </h3>
+                                        <div class="home-product-item__price home-product-item__price-bottom">
+                                            <div class="home-product-item__price-left">
+                                                <div class="home-product-item__left-price home-product-item__price-box">
+                                                    7.690.000 
+                                                     ₫
+                                                </div>
+                                            </div>
+                                            <div class="home-product-item__price-right">
+                                                <span class="home-product-item__price-right-text home-product-item__price-strike"><s>7.990.000 ₫</s> </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product-item__info">
+                                            <div class="home-product-item__info__text">
+                                                <span class="home-product-item__data">
+                                                    <i class="home-product-item__icon fas fa-server"></i> Snapdragon 860
+                                                </span>
+                                                <span class="home-product-item__data">
+                                                    <i class="home-product-item__icon fas fa-mobile-alt"></i> 6.67"
+                                                </span>
+                                                <span class="home-product-item__data">
+                                                    <i class="home-product-item__icon fas fa-microchip"></i> 8 GB
+                                                </span>
+                                                <span class="home-product-item__data">
+                                                    <i class="home-product-item__icon far fa-hdd"></i> 256 GB
+                                                </span>
+                                            </div>
+
+                                            <div class="home-product-item__pay">
+                                                <span class="home-product-item__pay-icon home-product-item__pay-active">
+                                                    <img src="./assets/img/moca.jpg" alt="Giảm thêm 5% tối đa 500.000đ">
+                                                </span>
+                                                <span class="home-product-item__pay-icon">
+                                                    <img src="./assets/img/fecredit.jpg" alt="Giảm thêm 500.000đ qua thẻ tín dụng FE">
+                                                </span>
+                                                <div class="home-product-item__pay-info">Giảm thêm 5% tối đa 500.000đ</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product__btn">
+                                            <a href="" class="btn btn--primary btn-medium">MUA NGAY</a>
+                                            <a href="" class="btn btn-small">SO SÁNH</a>
+                                        </div>
+
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="grid__column-3-3">
+                                <!-- Product item -->
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img">
+                                        <img src="./assets/img/vsmart.jpg" alt="Vsmart Aris 8GB-128GB">
+                                        <div class="home-product-item__sale home-product-item__sale-two">
+                                            <span class="home-product-item__sale-price ">Trả góp 0%</span>
+                                        </div>
+                                        <div class="home-product-item__reduce">
+                                            <span class="home-product-item__reduce-price ">Giảm 1.700.000₫</span>
+                                        </div>
+                                    </div>  
+                                    <div class="home-product-item__description">
+                                        <h3 class="home-product-item__name">
+                                            <a href="" class="home-product-item__link" title="Vsmart Aris 8GB-128GB" >Vsmart Aris 8GB-128GB</a>
+                                        </h3>
+                                        <div class="home-product-item__price home-product-item__price-bottom">
+                                            <div class="home-product-item__price-left">
+                                                <div class="home-product-item__left-price home-product-item__price-box">
+                                                    4.990.000 
+                                                     ₫
+                                                </div>
+                                            </div>
+                                            <div class="home-product-item__price-right">
+                                                <span class="home-product-item__price-right-text home-product-item__price-strike"><s>6.690.000 ₫</s> </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product-item__info">
+                                            <div class="home-product-item__info__text">
+                                                <span class="home-product-item__data">
+                                                    <i class="home-product-item__icon fas fa-mobile-alt"></i> 6.39"
+                                                </span>
+                                                <span class="home-product-item__data">
+                                                    <i class="home-product-item__icon fas fa-microchip"></i> 8 GB
+                                                </span>
+                                                <span class="home-product-item__data">
+                                                    <i class="home-product-item__icon far fa-hdd"></i> 128 GB
+                                                </span>
+                                            </div>
+
+                                            <div class="home-product-item__pay">
+                                                <span class="home-product-item__pay-icon home-product-item__pay-active">
+                                                    <img src="./assets/img/moca.jpg" alt="Giảm thêm 5% tối đa 500.000đ">
+                                                </span>
+                                                <span class="home-product-item__pay-icon">
+                                                    <img src="./assets/img/fecredit.jpg" alt="Giảm thêm 500.000đ qua thẻ tín dụng FE">
+                                                </span>
+                                                <div class="home-product-item__pay-info">Giảm thêm 5% tối đa 500.000đ</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product__btn">
+                                            <a href="" class="btn btn--primary btn-medium">MUA NGAY</a>
+                                            <a href="" class="btn btn-small">SO SÁNH</a>
+                                        </div>
+
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="grid__column-3-3">
+                                <!-- Product item -->
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img">
+                                        <img src="./assets/img/oppo.jpg" alt="Oppo Reno6 5G">
+                                        <div class="home-product-item__sale">
+                                            <span class="home-product-item__sale-price">Trả góp 0%</span>
+                                        </div>
+                                    </div>  
+                                    <div class="home-product-item__description">
+                                        <h3 class="home-product-item__name">
+                                            <a href="" class="home-product-item__link" title="Oppo Reno6 5G" >Oppo Reno6 5G</a>
+                                        </h3>
+                                        <div class="home-product-item__price">
+                                            <div class="home-product-item__price-left">
+                                                <div class="home-product-item__left-price">
+                                                    12.990.000 
+                                                     ₫
+                                                </div>
+                                            </div>
+                                            <div class="home-product-item__price-right">
+                                                <span class="home-product-item__price-right-text">Chỉ từ</span>
+                                                <p class="home-product-item__right-price">
+                                                    <strong>1.628.000đ</strong>
+                                                /tháng
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product-item__info">
+                                            <div class="home-product-item__info__text">
+                                                <span class="home-product-item__data">
+                                                    <i class="home-product-item__icon fas fa-server"></i> MediaTek Dimensity 900 5G
+                                                </span>
+                                                <span class="home-product-item__data">
+                                                    <i class="home-product-item__icon fas fa-mobile-alt"></i> 6.43"
+                                                </span>
+                                                <span class="home-product-item__data">
+                                                    <i class="home-product-item__icon fas fa-microchip"></i> 8 GB
+                                                </span>
+                                                <span class="home-product-item__data">
+                                                    <i class="home-product-item__icon far fa-hdd"></i> 128 GB
+                                                </span>
+                                            </div>
+
+                                            <div class="home-product-item__pay">
+                                                <span class="home-product-item__pay-icon home-product-item__pay-active">
+                                                    <img src="./assets/img/moca.jpg" alt="Giảm thêm 5% tối đa 500.000đ">
+                                                </span>
+                                                <span class="home-product-item__pay-icon">
+                                                    <img src="./assets/img/fecredit.jpg" alt="Giảm thêm 500.000đ qua thẻ tín dụng FE">
+                                                </span>
+                                                <div class="home-product-item__pay-info">Giảm thêm 500.000đ qua thẻ tín dụng FE</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product__btn">
+                                            <a href="" class="btn btn--primary btn-medium">MUA NGAY</a>
+                                            <a href="" class="btn btn-small">SO SÁNH</a>
+                                        </div>
+
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="grid__column-3-3">
+                                <!-- Product item -->
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img">
+                                        <img src="./assets/img/tecno.jpg" alt="TECNO POVA 2 4GB-64GB">
+                                        <div class="home-product-item__sale home-product-item__sale-two">
+                                            <span class="home-product-item__sale-price ">Trả góp 0%</span>
+                                        </div>
+                                        <div class="home-product-item__reduce">
+                                            <span class="home-product-item__reduce-price ">Giảm 200.000₫</span>
+                                        </div>
+                                    </div>  
+                                    <div class="home-product-item__description">
+                                        <h3 class="home-product-item__name">
+                                            <a href="" class="home-product-item__link" title="TECNO POVA 2 4GB-64GB" >TECNO POVA 2 4GB-64GB</a>
+                                        </h3>
+
+                                        <div class="home-product-item__memory">
+                                            <div class="home-product-item1 home-product-item1__active">
+                                                <strong>64GB</strong>
+                                            </div>
+                                            <div class="home-product-item1">
+                                                <strong>128GB</strong>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product-item__price home-product-item__price-bottom">
+                                            <div class="home-product-item__price-left">
+                                                <div class="home-product-item__left-price home-product-item__price-box">
+                                                    4.090.000
+                                                     ₫
+                                                </div>
+                                            </div>
+                                            <div class="home-product-item__price-right">
+                                                <span class="home-product-item__price-right-text home-product-item__price-strike"><s>4.290.000 ₫</s> </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product-item__info">
+                                            <div class="home-product-item__info__text">
+                                                <span class="home-product-item__data">
+                                                    <i class="home-product-item__icon fas fa-server"></i> Helio G85
+                                                </span>
+                                                <span class="home-product-item__data">
+                                                    <i class="home-product-item__icon fas fa-mobile-alt"></i> 6.9"
+                                                </span>
+                                                <span class="home-product-item__data">
+                                                    <i class="home-product-item__icon fas fa-microchip"></i> 4 GB
+                                                </span>
+                                                <span class="home-product-item__data">
+                                                    <i class="home-product-item__icon far fa-hdd"></i> 64 GB
+                                                </span>
+                                            </div>
+
+                                            <div class="home-product-item__pay">
+                                                <span class="home-product-item__pay-icon home-product-item__pay-active">
+                                                    <img src="./assets/img/moca.jpg" alt="Giảm thêm 5% tối đa 500.000đ">
+                                                </span>
+                                                <div class="home-product-item__pay-info">Giảm thêm 5% tối đa 500.000đ</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product__btn">
+                                            <a href="" class="btn btn--primary btn-medium">MUA NGAY</a>
+                                            <a href="" class="btn btn-small">SO SÁNH</a>
+                                        </div>
+
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+
+        <footer class="footer">
+
+        </footer>
+    </div>
+
+    <!-- Modal layout -->
+    <!-- <div class="modal">
+        <div class="modal__overlay"></div>
+        
+        <div class="modal__body"> -->
+            <!-- Register form -->
+            <!-- <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng Ký</h3>
+                        <span class="auth-form__switch-btn">Đăng nhập</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu của bạn">
+                        </div>
+                    </div>
+                    
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
+                            Bằng việc đăng kí, bạn đã đồng ý với shopee về 
+                            <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                            <a href="" class="auth-form__text-link">Chính sách bảo mật</a> 
+                        </p>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__controls-back btn-normal">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+                
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn-size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn-size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-google"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Google
+                        </span>
+                    </a>
+                </div>
+            </div> -->
+            <!-- Login form -->
+            <!-- <div class="auth-form">
+
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__switch-btn">Đăng Ký</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                    </div>
+                    
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                            <span class="auth-form__help-seperate"></span>
+                            <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__controls-back btn-normal">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+                
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn-size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn-size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-google"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Google
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+</body>
+</html>
