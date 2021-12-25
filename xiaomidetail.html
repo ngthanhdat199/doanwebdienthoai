@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiaomi detail</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="shortcut icon" type="image/png" href="./assets/img/faviicon.png"/>
+
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar"> 
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--seperate"> 
+                        <a href="./index.html" class="header__navbar-item-linker">
+                            <i class="header__navbar-icon-new fas fa-home"></i>
+                            Trang chủ
+                            </li>
+                        </a>
+                        <li class="header__navbar-item header__navbar-item--seperate"> 
+                            <a href="./sanpham.html" class="header__navbar-item-linker">
+                                <i class="header__navbar-icon-new fas fa-shopping-basket"></i>
+                                Sản phẩm
+                                </li>
+                            </a>
+                        <li class="header__navbar-item header__navbar-item--seperate">
+                            <a href="./gioithieu.html" class="header__navbar-item-linker">
+                                <i class="header__navbar-icon-new far fa-question-circle"></i>
+                                Giới thiệu
+
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="./contact.html" class="header__navbar-item-linker">
+                                <i class="header__navbar-icon-new fas fa-portrait"></i>
+                                Liên hệ</li>
+                            </a>
+                    </ul>
+    
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-notify">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <div class="header__notify-header">
+                                    <div class="header__notify-wrap">
+                                        <img class="header__img" src="./assets/img/notify.png">
+                                    </div>
+                                    <p class="header__notify-news">Chưa có thông báo mới</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fas fa-hands-helping"></i>
+                                Hỗ Trợ
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--seperate">
+                            <a href="#my-modal-regis" class="header__navbar-item-link">Đăng kí</a>
+                            
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--strong">
+                            <a href="#my-modal-login" class="header__navbar-item-link">Đăng nhập</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Header with search -->
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <a href="./index.html" class="header__logo-link">
+                            <img class="header__logo-img" src="./assets/img/logomau.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Nhập tên điện thoại ... cần tìm">
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+                    </div>
+    
+                    <!-- Cart layout -->
+                        <a href="./cart.html" class="header__cart-link">
+                        <div class="header__cart">
+                            <div class="header__cart-wrap">
+                                <i class="header__cart-icon fas fa-shopping-cart"></i>
+                                <span class="header__cart-notice">3</span>
+                                <div class="header__cart-list ">
+                                    <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                    <ul class="header__cart-list-item">
+                                        <!-- Cart item -->
+                                        <li class="header__cart-item">  
+                                            <img src="./assets/img/iphone.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">iPhone 13 Pro Max 128GB</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">33.990.000₫</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-quantity">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">Phân loại hàng: Bạc</span>
+                                                    <span class="header__cart-item-remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">  
+                                            <img src="./assets/img/samsung.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Samsung Galaxy Z Flip3 5G 128...</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">47.980.000₫ </span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-quantity">2</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">Phân loại hàng: Bạc</span>
+                                                    <span class="header__cart-item-remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">  
+                                            <img src="./assets/img/oppo.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Oppo Reno6 5G</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">12.990.000₫</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-quantity">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">Phân loại hàng: Bạc</span>
+                                                    <span class="header__cart-item-remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a href="./cart.html">
+                                        <button class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </a>
+                      
+                    </div>
+                </div>   
+            </div>
+        </header>
+
+        <div class="app__container product-detail">
+           <div class="grid">
+                <div class="grid__row app__content ">
+                    <div class="top">
+                        <div class="top-name-product">
+                            <h1 class="top-name">Xiaomi POCO X3 Pro NFC 8GB-256GB</h1>
+                        </div>
+                        <div class="top-rating">
+                            <i class="top-rating__icon fas fa-star checked"></i>
+                            <i class="top-rating__icon fas fa-star checked"></i>
+                            <i class="top-rating__icon fas fa-star checked"></i>
+                            <i class="top-rating__icon fas fa-star checked"></i>
+                            <i class="top-rating__icon fas fa-star checked"></i>
+                            <span class="top-rating__rv">21 đánh giá</span> 
+                        </div>
+                    </div>    
+                    <div class="grid__column-6">
+                        <div class="product-wrapper">
+                            <div class="product-wrapper-box">
+                                <img src="./assets/img/xiaomi.jpg" alt="" class="product-wrapper__img">
+                            </div>
+                        </div>
+                        <div class="product-detail">
+                            <ul class="product-detail__list">
+                                <li class="product-detail__item">
+                                    <i class="home-product-item__icon-phone fas fa-mobile-alt"></i>
+                                    6.67", FHD+, IPS LCD, 1080 x 2400 Pixel
+                                </li>
+                                <li class="product-detail__item">
+                                    <i class="home-product-item__icon-cam fas fa-camera"></i>
+                                    48.0 MP + 8.0 MP + 2.0 MP + 2.0 MP
+                                </li>
+                                <li class="product-detail__item">
+                                    <i class="home-product-item__icon home-product-item__icon-selfie fas fa-portrait"></i>
+                                    20.0 MP
+                                </li>
+                                <li class="product-detail__item">
+                                    <i class="home-product-item__icon home-product-item__icon-cpu fas fa-server"></i>
+                                    Snapdragon 860
+                                </li>
+                                <li class="product-detail__item">
+                                    <i class="home-product-item__icon-ram far fa-hdd"></i>
+                                    256 GB
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="grid__column-6">
+                        <div class="product-detail-price">
+                            <div class="product-detail-price-left">
+                                <div class="product-detail-price__left-price">
+                                    7.690.000₫
+                                </div>
+                            </div>
+                            <div class="product-detail-price-right">
+                                <span class="product-detail-price-right-text">Trả góp chỉ từ</span>
+                                <p class="product-detail-price__right-price">
+                                    <strong>968.500₫</strong>
+                                /tháng
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product-detail-feature">
+                            <ul class="product-detail-feature__list">
+                                <li class="product-detail-feature__item">
+                                    <div class="product-detail-feature__wrap">
+                                        <img src="./assets/img/vnpay.jpg " alt="" class="product-detail-feature__img">
+                                    </div>
+                                    <div class="product-detail-feature__text">
+                                        <p class="product-detail-feature__top">Thanh toán VNPAY-QR</p>
+                                        <div class="product-detail-feature__info">
+                                            Giảm ngay 5% tối đa 500.000đ khi thanh toán qua VNPAY-QR 
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product-detail-feature__item">
+                                    <div class="product-detail-feature__wrap">
+                                        <img src="./assets/img/samsungpay.jpg" alt="" class="product-detail-feature__img">
+                                    </div>
+                                    <div class="product-detail-feature__text">
+                                        <p class="product-detail-feature__top">Thanh toán Samsung care +</p>
+                                        <div class="product-detail-feature__info">
+                                            Giảm 30% khi thanh toán qua Samsung Care+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product-detail-feature__item">
+                                    <div class="product-detail-feature__wrap">
+                                        <img src="./assets/img/fecredit.jpg " alt="" class="product-detail-feature__img">
+                                    </div>
+                                    <div class="product-detail-feature__text">
+                                        <p class="product-detail-feature__top">Ưu đãi dành cho chủ thẻ tín dụng FE</p>
+                                        <div class="product-detail-feature__info">
+                                            Giảm thêm 500.000đ khi thanh toán Online 100% bằng thẻ tín dụng FE
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product-detail-feature__item">
+                                    <div class="product-detail-feature__wrap">
+                                        <img src="./assets/img/moca.jpg" alt="" class="product-detail-feature__img">
+                                    </div>
+                                    <div class="product-detail-feature__text">
+                                        <p class="product-detail-feature__top">Thanh toán ví Moca trên ứng dụng Grab</p>
+                                        <div class="product-detail-feature__info">
+                                            Nhập GRABMOCA Giảm ngay 5% tối đa 500.000đ khi thanh toán Online bằng ví Moca trên ứng dụng Grab (Thanh toán tối thiểu 500.000đ) 
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>   
+                        <div class="product-detail-pay">
+                            <div class="product-detail-install__wrap">
+                                <button class="product-detail-install btn-size-xl btn-half btn ">
+                                    <div class="product-detail-install__phone">
+                                        <strong>
+                                            <a href="./cart.html" class="product-detail-install-link">
+                                                <i class="product-detail-buy__icon fas fa-shopping-cart"></i>
+                                                THÊM VÀO GIỎ HÀNG
+                                            </a>
+                                        </strong>
+                                    </div>
+                                </button>
+                                
+                                <button class="product-detail-install btn-size-xl btn-half btn ">
+                                    <div class="product-detail-install__phone">
+                                        <strong>
+                                            <a href="" class="product-detail-install-link">
+                                                <i class="product-detail-buy__icon far fa-credit-card"></i>
+                                            TRẢ GÓP QUA THẺ
+                                            </a>                                          
+                                        </strong>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="product-detail-buy">
+                                <button class="btn--primary btn btn-size-xl btn-buy-now">
+                                    <div class="product-detail-buy__now">
+                                        <strong class="product-detail-buy__now-text" >
+                                            <i class="product-detail-buy__icon fas fa-money-bill-wave"></i>
+                                            MUA NGAY
+                                        </strong>
+                                    </div>
+                                    <div class="product-detail-ship__text">Giao hàng miễn phí hoặc nhận tại shop</div>
+                                 </button>
+                                 
+                            </div>
+
+                           
+                        </div>
+                                         
+                        <div class="product-detail-promote">
+                            <ul class="product-detail-promote__list">
+                                <li class="product-detail-promote__item product-detail-promote__active">
+                                    ƯU ĐÃI THÊM
+                                </li>
+                                <li class="product-detail-promote__item">
+                                    <i class="product-detail-promote__icon fas fa-check-circle"></i>
+                                    Trả góp 0%
+                                </li>
+                                <li class="product-detail-promote__item">
+                                    <i class="product-detail-promote__icon fas fa-check-circle"></i>
+                                    Bảo hành 18 tháng
+                                </li>
+                                <li class="product-detail-promote__item">
+                                    <i class="product-detail-promote__icon fas fa-check-circle"></i>
+                                    Giảm 50% giá gói cước 1 năm (Vina350/Vina500) cho Sim VinaPhone trả sau (Trị giá đến 3 triệu)
+                                </li>
+                                <li class="product-detail-promote__item">
+                                    <i class="product-detail-promote__icon fas fa-check-circle"></i>
+                                    Giảm 50% giá mua gói bảo hiểm rơi vỡ 6 tháng (trị giá đến 1.000.000đ)
+                                </li>
+                                <li class="product-detail-promote__item">
+                                    <i class="product-detail-promote__icon fas fa-check-circle"></i>
+                                    Giảm giá 800,000đ khi tham gia thu cũ đổi mới (Không áp dụng kèm giảm giá qua VNPay, Moca)
+                                </li>
+                            </ul>
+                        </div>  
+                    </div>
+
+                </div>
+           </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid">
+                <div class="footer__body">
+                    <div class="grid__row">
+                        <div class="grid__column-6">
+                            <div class="footer__left">
+                                <h3 class="footer__left-heading">
+                                    <img src="./assets/img/logo.png" class="footer__left-heading-img" alt="">
+                                </h3>
+                                <P class="footer__left-content">
+                                    TechW là cửa hàng chuyên cung cấp những mẫu điện thoại giá rẻ và chất lượng tốt, chúng tôi cam kết bán hàng chính hãng, đảm bảo yêu cầu của người tiêu dùng.  
+                                </P>
+                                <h3 class="footer-address">Địa chỉ</h3>
+                                <p class="footer-address__text">
+                                    <i class="fas fa-home"></i>
+                                    128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí Minh
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="footer__main">
+                            <div class="footer__center">
+                                <h3 class="footer__center-heading">THÔNG TIN LIÊN HỆ</h3>
+                                <ul class="footer__center-content">
+                                    <li class="footer__center-item ">
+                                        Tư vấn mua hàng
+                                    </li>
+                                    <li class="footer__center-item">
+                                        <i class="footer__center-icon fas fa-phone"></i>
+                                        1800 6601
+                                    </li>
+                                    <li class="footer__center-item ">
+                                        Hỗ trợ kỹ thuật
+                                    <li class=" footer__center-item ">
+                                        <i class="footer__center-icon fas fa-phone"></i>
+                                        1800 1606
+                                    </li>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+
+                       
+                            <div class="footer__center-corp">
+                                <h3 class="footer__center__corp-heading">WEBSITE CÙNG TẬP ĐOÀN</h3>
+                                <ul class="footer__center__corp-content">
+                                    <li class="footer__center__corp-item ">
+                                        <i class="footer__center__corp-icon fab fa-buy-n-large"></i>
+                                        Buy n Large
+                                    </li>
+                                    <li class="footer__center__corp-item ">
+                                        <i class="footer__center__corp-icon footer__center__corp-item-left fab fa-amazon"></i>
+                                        Amazon
+                                    </li>
+                                    <li class="footer__center__corp-item ">
+                                        <i class="footer__center__corp-icon fab fa-ebay"></i>
+                                        Ebay
+                                    </li>
+                                </ul>
+                            </div>
+                       
+                       
+                     
+                        <div class="footer__right">
+                            <h3 class="footer__right-heading">THEO DÕI</h3>
+                            <ul class="footer__right-content">
+                                <li class="footer__right-item">
+                                    <i class="footer__right-icon footer-item_icon fab fa-facebook"></i>
+                                    Facebook
+                                </li>
+                                <li class="footer__right-item">
+                                    <i class="footer__right-icon footer-item_icon fab fa-instagram"></i>
+                                    Instagram
+                                </li>
+                                <li class="footer__right-item">
+                                    <i class="footer__right-icon footer-item_icon fab fa-github"></i>
+                                    Github
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                        
+                            
+                       
+                          
+                      
+                    </div> 
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__text">© 2021 - Made by Team with Love 💖.</p>
+            </div>
+        </footer>
+    </div>
+    <!-- Modal layout -->
+    <div class="modal" id="my-modal-regis">
+        <div class="modal__overlay"></div>
+        <a href="#" class="modal-close"></a>
+        
+        <div class="modal__body">
+            <!-- Register form -->
+            <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng Ký</h3>
+                        <span class="auth-form__switch-btn">Đăng nhập</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu của bạn">
+                        </div>
+                    </div>
+                    
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
+                            Bằng việc đăng kí, bạn đã đồng ý với techW về 
+                            <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                            <a href="" class="auth-form__text-link">Chính sách bảo mật</a> 
+                        </p>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__controls-back btn-normal">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+                
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn-size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn-size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-google"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Google
+                        </span>
+                    </a>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <div class="modal" id="my-modal-login">
+        <div class="modal__overlay"></div>
+        <a href="#" class="modal-close"></a>
+        
+        <div class="modal__body">
+            <!-- Login form -->
+            <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__switch-btn">Đăng Ký</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                    </div>
+                    
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                            <span class="auth-form__help-seperate"></span>
+                            <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__controls-back btn-normal">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+                
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn-size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn-size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-google"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Google
+                        </span>
+                    </a>
+                </div>
+            </div>
+    </div>
+     
+</body>
+</html>

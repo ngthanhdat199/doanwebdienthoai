@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/contactcss.css">
+        <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="shortcut icon" type="image/png" href="./assets/img/faviicon.png"/>
+
+    </head>
+    <body>
+        <div class="app">
+            <header class="header">
+                <div class="grid">
+                    <nav class="header__navbar"> 
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item header__navbar-item--seperate"> 
+                                <a href="./index.html" class="header__navbar-item-linker">
+                                    <i class="header__navbar-icon-new fas fa-home"></i>
+                                    Trang chủ
+                            </li>
+                            </a>
+                            <li class="header__navbar-item header__navbar-item--seperate"> 
+                                <a href="./sanpham.html" class="header__navbar-item-linker">
+                                    <i class="header__navbar-icon-new fas fa-shopping-basket"></i>
+                                    Sản phẩm
+                            </li>
+                            </a>
+                            <li class="header__navbar-item header__navbar-item--seperate">
+                                <a href="./gioithieu.html" class="header__navbar-item-linker">
+                                    <i class="header__navbar-icon-new far fa-question-circle"></i>
+                                    Giới thiệu
+
+                                </a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="./contact.html" class="header__navbar-item-linker">
+                                    <i class="header__navbar-icon-new fas fa-portrait"></i>
+                                    Liên hệ</li>
+                            </a>
+                        </ul>
+
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item header__navbar-item--has-notify">
+                                <a href="" class="header__navbar-item-link">
+                                    <i class="header__navbar-icon far fa-bell"></i>
+                                    Thông báo
+                                </a>
+                                <div class="header__notify">
+                                    <div class="header__notify-header">
+                                        <div class="header__notify-wrap">
+                                            <img class="header__img" src="./assets/img/notify.png">
+                                        </div>
+                                        <p class="header__notify-news">Chưa có thông báo mới</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-item-link">
+                                    <i class="header__navbar-icon fas fa-hands-helping"></i>
+                                    Hỗ Trợ
+                                </a>
+                            </li>
+                            <li class="header__navbar-item header__navbar-item--strong header__navbar-item--seperate">
+                                <a href="#my-modal-regis" class="header__navbar-item-link">Đăng kí</a>
+                                
+                            </li>
+                            <li class="header__navbar-item header__navbar-item--strong">
+                                <a href="#my-modal-login" class="header__navbar-item-link">Đăng nhập</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header-with-search">
+                        <div class="header__logo">
+                            <a href="./index.html" class="header__logo-link">
+                                <img class="header__logo-img" src="./assets/img/logomau.png" alt="">
+                            </a> 
+                        </div> 
+
+                        <div class="header__contact">
+                            <h1 class="header__contact-name">LIÊN HỆ</h1>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="contact__container">
+
+                            <div class="contact__container-form">
+                                <form>      
+                                    <input name="name" type="text" class="feedback-input" placeholder="Nhập họ và tên" />   
+                                    <input name="email" type="text" class="feedback-input" placeholder="Nhập địa chỉ email" />
+                                    <textarea name="text" class="feedback-input" placeholder="Nhập thông tin phản hồi"></textarea>
+                                    <input type="submit" value="GỬI"/>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="contact__container">
+                            <div class="contact-box">
+                                <h3 class="contact-address">Địa chỉ</h3>
+                                <p class="contact-address__text">
+                                    <i class="contact__center-icon fas fa-home"></i>
+                                    128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí Minh
+                                </p>
+                            </div>
+                            <div class="contact-box">
+                                <ul class="footer__center-content">
+                                    <li class="contact__center-item ">
+                                        <h3 class="contact-contact">Tư vấn mua hàng</h3>
+                                    </li>
+                                    <li class="contact__center-item">
+                                        <i class="contact__center-icon fas fa-phone"></i>
+                                        1800 6601
+                                    </li>
+                                    <li class="contact__center-item ">
+                                        <h3 class="contact-contact">Hỗ trợ kỹ thuật</h3>
+                                    </li>
+                                    <li class=" contact__center-item ">
+                                        <i class="contact__center-icon fas fa-phone"></i>
+                                        1800 1606
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div>
+                                <li class="contact__right-item">
+                                    <i class="contact__right-icon footer-item_icon fab fa-facebook"></i>
+                                    Facebook
+                                </li>
+                                <li class="contact__right-item">
+                                    <i class="contact__right-icon footer-item_icon fab fa-instagram"></i>
+                                    Instagram
+                                </li>
+                                <li class="contact__right-item">
+                                    <i class="contact__right-icon footer-item_icon fab fa-github"></i>
+                                    Github
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                    </div>   
+                </div>
+            </header>
+
+            <footer class="footer">
+                <div class="grid">
+                    <div class="footer__body">
+                        <div class="grid__row">
+                            <div class="grid__column-6">
+                                <div class="footer__left">
+                                    <h3 class="footer__left-heading">
+                                        <img src="./assets/img/logo.png" class="footer__left-heading-img" alt="">
+                                    </h3>
+                                    <P class="footer__left-content">
+                                        TechW là cửa hàng chuyên cung cấp những mẫu điện thoại giá rẻ và chất lượng tốt, chúng tôi cam kết bán hàng chính hãng, đảm bảo yêu cầu của người tiêu dùng.  
+                                    </P>
+                                    <h3 class="footer-address">Địa chỉ</h3>
+                                    <p class="footer-address__text">
+                                        <i class="fas fa-home"></i>
+                                        128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí Minh
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="footer__main">
+                                <div class="footer__center">
+                                    <h3 class="footer__center-heading">THÔNG TIN LIÊN HỆ</h3>
+                                    <ul class="footer__center-content">
+                                        <li class="footer__center-item ">
+                                            Tư vấn mua hàng
+                                        </li>
+                                        <li class="footer__center-item">
+                                            <i class="footer__center-icon fas fa-phone"></i>
+                                            1800 6601
+                                        </li>
+                                        <li class="footer__center-item ">
+                                            Hỗ trợ kỹ thuật
+                                        <li class=" footer__center-item ">
+                                            <i class="footer__center-icon fas fa-phone"></i>
+                                            1800 1606
+                                        </li>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+
+                                <div class="footer__center-corp">
+                                    <h3 class="footer__center__corp-heading">WEBSITE CÙNG TẬP ĐOÀN</h3>
+                                    <ul class="footer__center__corp-content">
+                                        <li class="footer__center__corp-item ">
+                                            <i class="footer__center__corp-icon fab fa-buy-n-large"></i>
+                                            Buy n Large
+                                        </li>
+                                        <li class="footer__center__corp-item ">
+                                            <i class="footer__center__corp-icon footer__center__corp-item-left fab fa-amazon"></i>
+                                            Amazon
+                                        </li>
+                                        <li class="footer__center__corp-item ">
+                                            <i class="footer__center__corp-icon fab fa-ebay"></i>
+                                            Ebay
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+
+                                <div class="footer__right">
+                                    <h3 class="footer__right-heading">THEO DÕI</h3>
+                                    <ul class="footer__right-content">
+                                        <li class="footer__right-item">
+                                            <i class="footer__right-icon footer-item_icon fab fa-facebook"></i>
+                                            Facebook
+                                        </li>
+                                        <li class="footer__right-item">
+                                            <i class="footer__right-icon footer-item_icon fab fa-instagram"></i>
+                                            Instagram
+                                        </li>
+                                        <li class="footer__right-item">
+                                            <i class="footer__right-icon footer-item_icon fab fa-github"></i>
+                                            Github
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p class="footer__text">© 2021 - Made by Team with Love 💖.</p>
+                </div>
+            </footer>
+
+        </div>
+        <!-- Modal layout -->
+        <div class="modal" id="my-modal-regis">
+            <div class="modal__overlay"></div>
+            <a href="#" class="modal-close"></a>
+            
+            <div class="modal__body">
+                <!-- Register form -->
+                <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng Ký</h3>
+                            <span class="auth-form__switch-btn">Đăng nhập</span>
+                        </div>
+
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu của bạn">
+                            </div>
+                        </div>
+                        
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy-text">
+                                Bằng việc đăng kí, bạn đã đồng ý với techW về 
+                                <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                                <a href="" class="auth-form__text-link">Chính sách bảo mật</a> 
+                            </p>
+                        </div>
+
+                        <div class="auth-form__controls">
+                            <button class="btn auth-form__controls-back btn-normal">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG KÝ</button>
+                        </div>
+                    </div>
+                    
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials--facebook btn btn-size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                            <span class="auth-form__socials-title">
+                                Kết nối với Facebook
+                            </span>
+                        </a>
+                        <a href="" class="auth-form__socials--google btn btn-size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fab fa-google"></i>
+                            <span class="auth-form__socials-title">
+                                Kết nối với Google
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        <div class="modal" id="my-modal-login">
+            <div class="modal__overlay"></div>
+            <a href="#" class="modal-close"></a>
+            
+            <div class="modal__body">
+                <!-- Login form -->
+                <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng nhập</h3>
+                            <span class="auth-form__switch-btn">Đăng Ký</span>
+                        </div>
+
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            </div>
+                        </div>
+                        
+                        <div class="auth-form__aside">
+                            <div class="auth-form__help">
+                                <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                                <span class="auth-form__help-seperate"></span>
+                                <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                            </div>
+                        </div>
+
+                        <div class="auth-form__controls">
+                            <button class="btn auth-form__controls-back btn-normal">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                        </div>
+                    </div>
+                    
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials--facebook btn btn-size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                            <span class="auth-form__socials-title">
+                                Kết nối với Facebook
+                            </span>
+                        </a>
+                        <a href="" class="auth-form__socials--google btn btn-size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fab fa-google"></i>
+                            <span class="auth-form__socials-title">
+                                Kết nối với Google
+                            </span>
+                        </a>
+                    </div>
+                </div>
+        </div>
+</body>
+</html>
